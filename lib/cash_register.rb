@@ -1,6 +1,7 @@
 require 'pry'
 class CashRegister
   attr_accessor :total, :discount, :item
+
   def initialize(discount = 20, total = 0)
     @total = total
     @discount = discount
@@ -10,6 +11,7 @@ class CashRegister
   def add_item(item, price, quantity = 1)
 
     self.total += price * quantity
+    binding.pry
   end
 
   def apply_discount
