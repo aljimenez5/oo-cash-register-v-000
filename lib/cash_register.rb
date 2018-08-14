@@ -16,7 +16,6 @@ class CashRegister
       self.total = total - (total / 100) * discount
       return "After the discount, the total comes to $#{self.total}."
     end
-    return "There is no discount to apply."
   end
 
 
