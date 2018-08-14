@@ -14,6 +14,7 @@ class CashRegister
 
   def apply_discount
     self.price
+    binding.pry
   end
 
 
