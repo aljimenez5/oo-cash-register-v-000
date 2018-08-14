@@ -17,10 +17,13 @@ class CashRegister
       return "There is no discount to apply."
   end
 
+  def item
+    @item
+  end
+  
   def items
     items_arr = []
-    add_item(item, price, quantity = 1)
-    items_arr << item
+    items
   end
 
 end
