@@ -19,7 +19,7 @@ class CashRegister
 
   def items
     items = []
-    items << @item
+    add_item(item, price, quantity = 1).split(',')
 
   end
 
