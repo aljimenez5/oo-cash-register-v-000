@@ -18,6 +18,8 @@ class CashRegister
   end
 
   def items
+    items_arr = []
     add_item(item, price, quantity = 1)
+
 
 end
