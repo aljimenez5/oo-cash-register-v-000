@@ -17,7 +17,7 @@ class CashRegister
       return "There is no discount to apply."
   end
 
-  def items
+  def self.items
     items = []
     add_item(item, price, quantity = 1).split(',')
     items << add_item[0]
