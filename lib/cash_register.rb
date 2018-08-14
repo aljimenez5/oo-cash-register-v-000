@@ -1,7 +1,7 @@
 require 'pry'
 class CashRegister
   attr_accessor :total, :discount
-  def initialize(total = 0, discount = 0)
+  def initialize(total = 0, discount = 20)
     @total = total
     @discount = discount.to_f / 100
   end
