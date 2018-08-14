@@ -23,7 +23,7 @@ class CashRegister
   
   def items
     items_arr = []
-    items
+    items_arr << @item
   end
 
 end
