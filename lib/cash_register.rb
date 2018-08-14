@@ -19,7 +19,7 @@ class CashRegister
 
   def items
     items = Array.new
-    
+    self.add_item.each {|item, price, quantity|}
   end
 
 end
