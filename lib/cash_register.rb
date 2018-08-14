@@ -4,6 +4,7 @@ class CashRegister
   def initialize(total = 0, discount = 20)
     @total = total
     @discount = discount
+    binding.pry
   end
 
 
@@ -13,7 +14,7 @@ class CashRegister
 
   def apply_discount
     self.discount = discount.to_f / 100
-    binding.pry
+
   end
 
 
