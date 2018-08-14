@@ -18,8 +18,8 @@ class CashRegister
   end
 
   def items
+    items = Array.new
     
-    binding.pry
   end
 
 end
