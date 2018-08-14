@@ -19,7 +19,8 @@ class CashRegister
   end
 
   def items
-    items = Array.new
+    items = []
+    items << @item
 
   end
 
