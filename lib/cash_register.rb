@@ -19,7 +19,7 @@ class CashRegister
 
   def items
     items = []
-    add_item(item, price).map{|item| items << item}
+    add_item(item, price, quantity = 1).map{|item, price, quantity| items << item}
   end
 
   def transactions=(transactions)
