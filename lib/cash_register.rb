@@ -24,6 +24,7 @@ class CashRegister
 
   def transactions=(transactions)
     @transactions = Array.new
+  end
 
   def void_last_transaction
     self.add_item(item, price)
