@@ -21,7 +21,6 @@ class CashRegister
   def items=()
     @items = []
 
-    binding.pry
   end
 
   def transactions=(transactions)
