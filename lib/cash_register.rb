@@ -19,7 +19,7 @@ class CashRegister
 
   def items
     @items = []
-    method_add_item = self.instance(:add_item)
+    method_add_item = self.instance_of(:add_item)
     @transactions << method_add_item.call
     self.add_item(item, price, quantity = 1).each
 
