@@ -19,7 +19,6 @@ class CashRegister
 
   def items
     @items = []
-    self.item
 
     binding.pry
   end
