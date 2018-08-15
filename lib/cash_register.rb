@@ -19,11 +19,14 @@ class CashRegister
 
   def items
     @items = []
-    self.add_item(item, price, quantity = 1)
+    method_add_item = self.instance(:add_item)
+    @transactions << method_add_item.call
+    self.add_item(item, price, quantity = 1).each
+
   end
 
   def transactions=(transactions)
-    @transactions
+    @transactions = []
   end
 
   def void_last_transaction
