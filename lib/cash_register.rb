@@ -20,7 +20,7 @@ class CashRegister
 
   def items
     items = []
-    add_item(*args).map{|arg| items << arg[1]}
+    add_item(*args).map{|arg| items << arg[0]}
 
   end
 
