@@ -20,7 +20,7 @@ class CashRegister
   def items
     @items = []
     self.add_item(item, price, quantity = 1).each {|item| @items << item}
-
+    binding.pry
   end
 
   def transactions=(transactions)
