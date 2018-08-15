@@ -26,7 +26,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    last_transaction = @transactions.join(', ')
+    last_transaction = @transactions.last.join(', ')
     self.total - self.add_item(@transactions.last)
     binding.pry
   end
