@@ -21,7 +21,6 @@ class CashRegister
   def items
     items = []
     add_item(item, price).map{|item| items << item}
-
   end
 
   def void_last_transaction
