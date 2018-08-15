@@ -28,6 +28,6 @@ class CashRegister
   def void_last_transaction
     transaction_total = 0
     @transactions.each {|item, price, quantity| transaction_total += price * quantity}
-    self.total - transaction_total
+    self.total -= transaction_total
   end
 end
