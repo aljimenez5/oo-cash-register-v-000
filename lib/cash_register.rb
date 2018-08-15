@@ -20,9 +20,8 @@ class CashRegister
 
   def items
     items = []
-    add_item(item, price, quantity = 1).split(',')
-    items << add_item[0]
-
+    method[:add_item].parameters
+    binding.pry
   end
 
 end
