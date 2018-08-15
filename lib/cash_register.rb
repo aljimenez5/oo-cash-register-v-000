@@ -26,6 +26,6 @@ class CashRegister
   end
 
   def void_last_transaction
-    self.add_item(@transactions.last)
+    self.total - self.add_item(@transactions.last)
   end
 end
