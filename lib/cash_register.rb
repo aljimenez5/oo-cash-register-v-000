@@ -9,7 +9,7 @@ class CashRegister
 
 
   def add_item(item, price, quantity = 1)
-    self.item = []
+    @items = []
     return price * quantity
     binding.pry
   end
