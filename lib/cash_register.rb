@@ -20,8 +20,8 @@ class CashRegister
 
   def items
     items = []
-    method(__method__).parameters.map{|argument| items << argument[1].to_s}
-  
+    method(:add_item).parameters.map{|argument| items << argument[1].to_s}
+
   end
 
 end
