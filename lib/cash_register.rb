@@ -22,7 +22,7 @@ class CashRegister
   end
 
   def items
-    @items
+    @items.flatten
   end
 
   def void_last_transaction
