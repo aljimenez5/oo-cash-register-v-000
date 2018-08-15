@@ -19,10 +19,11 @@ class CashRegister
 
   def items
     @items = []
+    self.add_item(item, price, quantity = 1)
   end
 
   def transactions=(transactions)
-    @transactions 
+    @transactions
   end
 
   def void_last_transaction
