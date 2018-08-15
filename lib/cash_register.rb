@@ -21,7 +21,7 @@ class CashRegister
   end
 
   def items
-    items = []
+    self.items = []
     add_item(item, price).map{|item| items << item}
   end
 
