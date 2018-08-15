@@ -21,7 +21,7 @@ class CashRegister
   def items
     items = []
     method(__method__).parameters.map{|argument| items << argument[1].to_s}
-    binding.pry
+  
   end
 
 end
