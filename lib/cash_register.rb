@@ -18,7 +18,7 @@ class CashRegister
       return "There is no discount to apply."
   end
 
-  def items=()
+  def items=(items)
     @items = []
     @items << item
   end
