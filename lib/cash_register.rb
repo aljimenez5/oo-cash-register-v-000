@@ -18,7 +18,6 @@ class CashRegister
   end
 
   def items
-    items = []
     @transactions << add_item(item, price, quantity = 1)
     add_item(item, price, quantity = 1).map{|item, price, quantity| @transactions << item}
   end
