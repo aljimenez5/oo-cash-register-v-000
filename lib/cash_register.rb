@@ -20,7 +20,7 @@ class CashRegister
 
   def items
     items = []
-    method[:add_item].parameters
+    method(:add_item).parameters
     binding.pry
   end
 
