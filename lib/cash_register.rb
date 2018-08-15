@@ -29,5 +29,6 @@ class CashRegister
     transaction_total = 0
     @transactions.each {|item, price, quantity| transaction_total += price * quantity}
     last_total = self.total - transaction_total
+    binding.pry
   end
 end
