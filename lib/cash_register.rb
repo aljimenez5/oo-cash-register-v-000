@@ -23,7 +23,7 @@ class CashRegister
   end
 
   def transactions=(transactions)
-    @transactions = Array.new
+    @transactions 
   end
 
   def void_last_transaction
