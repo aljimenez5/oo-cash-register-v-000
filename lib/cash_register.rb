@@ -19,7 +19,6 @@ class CashRegister
 
   def items
     @items = []
-    @transactions << add_item(item, price, quantity = 1)
   end
 
   def transactions=(transactions)
