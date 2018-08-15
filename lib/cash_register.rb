@@ -26,8 +26,8 @@ class CashRegister
   end
 
   def void_last_transaction
-    last_transaction = @transactions.last.join(', ')
-    
+    last_transaction = @transactions.last
+
     binding.pry
   end
 end
